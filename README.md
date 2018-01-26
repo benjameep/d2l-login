@@ -46,3 +46,9 @@ d2login.getRequest('byui',(err,request) => {
 
 
 ```
+
+### getRequest(subdomain, [callback])
+returns the [request library](https://www.npmjs.com/package/request) which has the d2l cookies applied to it
+
+### getCookies(subdomain, [callback])
+returns an array of [tough-cookies](https://www.npmjs.com/package/tough-cookie)
