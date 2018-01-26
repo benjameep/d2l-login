@@ -33,9 +33,8 @@ var d2lAPIurl = `https://byui.brightspace.com/d2l/api/lp/1.20/100283/groupcatego
 */
 })()
 
-/**************************************
-* Using the callback
-***************************************/
+
+// Using the callback
 d2login.getRequest('byui',(err,request) => {
 	if(err) return console.log(err)
 	
