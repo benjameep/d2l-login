@@ -1,15 +1,24 @@
 {
   "name": "d2l-login",
   "version": "1.0.0",
-  "description": "",
+  "description": "If cookies are invalid or expired, prompts for username and password",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Benjamin Earl",
   "license": "ISC",
   "dependencies": {
     "prompt": "^1.0.0",
     "request": "^2.83.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjameep/d2l-login.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benjameep/d2l-login/issues"
+  },
+  "homepage": "https://github.com/benjameep/d2l-login#readme"
 }
