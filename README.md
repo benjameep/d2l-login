@@ -22,7 +22,7 @@ var d2lAPIurl = `https://byui.brightspace.com/d2l/api/lp/1.20/100283/groupcatego
 		console.log(body)
 	})
 	
-	var cookies = await d2login.getCookies('byui)
+	var cookies = await d2login.getCookies('byui')
 	console.log(cookies) // => 
 /*
 	[ 
