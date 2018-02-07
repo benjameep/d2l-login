@@ -1,5 +1,11 @@
 # d2l-login
 
+##### Install
+```
+npm i --save git+https://github.com/benjameep/d2l-login.git
+```
+
+
 ##### Handles Getting and Storing d2l cookies
 
 If cookies are invalid or expired, prompts for username and password
@@ -52,3 +58,20 @@ returns the [request library](https://www.npmjs.com/package/request) which has t
 
 ### getCookies(subdomain, [callback])
 returns an array of [tough-cookies](https://www.npmjs.com/package/tough-cookie)
+
+
+### With puppeteer
+``` js
+async function main(){
+	const cookies = await d2login.getCookies('<subdomain>');
+	const browser = await puppeteer.launch({headless:false});
+	const page = await browser.newPage();
+	await page.setCookie(...cookies.map(c => ({
+		name: c.key,
+		value: c.value,
+		domain: c.domain,
+		path: c.path,
+	})));
+	await browser.close();
+}
+```
