@@ -1,16 +1,18 @@
 # d2l-login
 
-##### Install
-```
-npm i --save git+https://github.com/benjameep/d2l-login.git
-```
+## Description 
+This tool hands over login cookies to d2l. If cookies are invalid or expired, it prompts for the username or password
+
+## How to Install
+
+Standard Install
+    ```bash
+    npm i --save git+https://github.com/benjameep/d2l-login.git
+    ```
 
 
 ##### Handles Getting and Storing d2l cookies
 
-If cookies are invalid or expired, prompts for username and password
-
-If cookies are good then just hands them over
 
 
 ``` javascript
@@ -74,4 +76,15 @@ async function main(){
 	})));
 	await browser.close();
 }
+```
+
+
+
+
+
+
+## How to Use
+Run the following command:
+```bash
+node <%= main %>
 ```
