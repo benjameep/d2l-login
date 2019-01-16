@@ -6,10 +6,16 @@ This tool hands over login cookies to d2l. If cookies are invalid or expired, it
 ## How to Install
 
 Standard Install
-    ```bash
+    ```
     npm i --save git+https://github.com/benjameep/d2l-login.git
     ```
 
+
+## How to Use
+Run the following command:
+```bash
+node main
+```
 
 ##### Handles Getting and Storing d2l cookies
 
@@ -76,15 +82,4 @@ async function main(){
 	})));
 	await browser.close();
 }
-```
-
-
-
-
-
-
-## How to Use
-Run the following command:
-```bash
-node <%= main %>
 ```
